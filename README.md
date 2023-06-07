@@ -11,7 +11,7 @@
 
 > ### Part 3: Write views that do something
 
-Writing more views: You can write dynamically routes by using '<type: var_name>' inside your urlpatterns. For example:
+Writing more views: You can write dynamic routes by using '<type: var_name>' inside your urlpatterns. For example:
 
 ```python
 
@@ -29,7 +29,7 @@ urlpatterns = [
 
 > ### Part 4: Write views that do something
 
-Writing more views: You can write dinamically routes by ysing '<type: var_name>' inside your urlpatterns. For example:
+Always return an HttpResponseRedirect after successfully dealing with POST data. This prevents data from being posted twice if a user hits the Back button.
 
 > ### Keywords
 
