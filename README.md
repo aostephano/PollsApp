@@ -59,6 +59,8 @@ python manage.py sqlmigrate polls 0001
 
 **Race Condition:** A situation where two or more threads/processes are reading or writing some shared data, and the final result depends on the timing of how the threads are scheduled;
 
+**ORM:** Object Relational Mapper
+
 ### Remember the three-step guide to making model changes
 
 1. Change your models (in models.py).
