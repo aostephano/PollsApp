@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 
+import community as community
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -23,7 +25,8 @@ SECRET_KEY = 'django-insecure-u(*sn(%-d)o#v=%j+x^u$as45ql5fo_hb-lh67x+n%)-46wjfo
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+]
 
 # Application definition
 
@@ -39,7 +42,7 @@ INSTALLED_APPS = [
     'polls.apps.PollsConfig'
 ]
 
-MIDDLEWARE = [
+MIDDLEWARE = [`
     'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
