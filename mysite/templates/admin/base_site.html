@@ -1,0 +1,15 @@
+{% extends "admin/base.html" %}
+
+{% block title %}
+    {% if subtitle %}PollsApp Subtitle | {% endif %}{{ title }} |
+    PollsApp
+{% endblock %}
+
+{% block branding %}
+    <h1 id="site-name"><a href="{% url 'admin:index' %}">PollsApp</a></h1>
+    {% if user.is_anonymous %}
+        {% include "admin/color_theme_toggle.html" %}
+    {% endif %}
+{% endblock %}
+
+{% block nav-global %}{% endblock %}

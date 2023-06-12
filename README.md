@@ -1,11 +1,6 @@
 <!-- # Study Notes -->
-# Main Title
 
-## Topics Covered
-
-- Topic 1
-- Topic 2
-- Topic 3
+# Django
 
 ## Getting Started: Polls App
 
@@ -29,35 +24,44 @@ urlpatterns = [
 
 > ### Part 4: Write views that do something
 
-Always return an HttpResponseRedirect after successfully dealing with POST data. This prevents data from being posted twice if a user hits the Back button.
+"Always return an HttpResponseRedirect after successfully dealing with POST data. This prevents data from being posted
+twice if a user hits the Back button."
 
 > ### Keywords
 
-**Endpoint:** /products /orders /users, /etc;
+**Endpoint:** an endpoint refers to a specific URL or URI (Uniform Resource Identifier) that an application exposes to
+handle incoming HTTP requests. Each endpoint typically corresponds to a specific functionality or action that the
+application can perform.
+/products /orders /users;
 
 **view.py:** Event handler;
 
-**migrate:** command looks at the INSTALLED_APPS setting and creates any necessary database tables according to the database settings in your mysite/settings.py;
+**migrate:** command looks at the INSTALLED_APPS setting and creates any necessary database tables according to the
+database settings in your mysite/settings.py;
 
 **DRY:** Don't Repeat Yourself principle;
 
-**Migrations:** are how Django stores changes to your models (and thus your database schema) - they’re files on disk. You can read the migration for your new model if you like; it’s the file polls/migrations/0001_initial.py;
+**Migrations:** are how Django stores changes to your models (and thus your database schema) - they’re files on disk.
+You can read the migration for your new model if you like; it’s the file polls/migrations/0001_initial.py;
 
 ```bash
 python manage.py makemigrations polls
 ```
 
-**Migrate:** command looks at the INSTALLED_APPS setting and creates any necessary database tables according to the database settings in your mysite/settings.py file and the database migrations shipped with the app;
+**Migrate:** command looks at the INSTALLED_APPS setting and creates any necessary database tables according to the
+database settings in your mysite/settings.py file and the database migrations shipped with the app;
 
 ```bash
 python manage.py sqlmigrate polls 0001
 ```
 
-**TEMPLATES:** Django’s template engine provides a powerful mini-language for defining the user-facing layer of your application, encouraging a clean separation of concerns in your code;
+**TEMPLATES:** Django’s template engine provides a powerful mini-language for defining the user-facing layer of your
+application, encouraging a clean separation of concerns in your code;
 
 **DTO:** Data Transfer Object, is an object that carries data between processes;
 
-**Race Condition:** A situation where two or more threads/processes are reading or writing some shared data, and the final result depends on the timing of how the threads are scheduled;
+**Race Condition:** A situation where two or more threads/processes are reading or writing some shared data, and the
+final result depends on the timing of how the threads are scheduled;
 
 **ORM:** Object Relational Mapper
 
@@ -69,7 +73,8 @@ python manage.py sqlmigrate polls 0001
 
 ### Field lookups
 
-Field lookups are how you specify the meat of an SQL WHERE clause. They’re specified as keyword arguments to the QuerySet methods filter(), exclude() and get().
+Field lookups are how you specify the meat of an SQL WHERE clause. They’re specified as keyword arguments to the
+QuerySet methods filter(), exclude() and get().
 
 Basic lookups keyword arguments take the form field__lookuptype=value. (That’s a double-underscore). For example:
 
